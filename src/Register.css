@@ -1,0 +1,39 @@
+.Logo {
+    width: 229px;
+    min-width: 220px;
+    height: 90px;
+    max-width: 50px 0;
+}
+
+.fa-circle {
+    color: #6C63FF;
+}
+
+.Form {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 100%;
+    min-width: 300px;
+}
+
+.Next { 
+    background: #6C63FF;
+    border-radius: 5px;    
+}
+.Cancel { 
+    background: #6C63FF;
+    border-radius: 5px;    
+}
+
+.Videographer {
+    width: 400px;
+    height: 500px;
+    margin:  0 auto;
+}
+
+.Videographer-Legend {
+    top:0;
+    width: 100%;
+    margin-bottom: 1px;
+}
