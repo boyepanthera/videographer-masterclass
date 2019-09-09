@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import RegPageOne from './Register';
+import Register from './Register';
 
 function App() {
   return (
     <div className='container'>
-      <RegPageOne />
+      <Register />
     </div>
   );
 }
