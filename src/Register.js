@@ -57,8 +57,8 @@ const Register = ()=> {
                     {nextButton()}
                 </form>
             </div>
-
-        </div>           
+        </div>
+        <hr/>           
     </>
     )
         
