@@ -84,27 +84,28 @@ const FormOne = (props) => {
                 <div className='Form p-4 my-5' >
                     <div className='form-group'>
                         <label htmlFor='fullName'>Full Name</label>
-                        <input onChange={props.handleInputChange} value={props.inputs.fullName} type='text' className='form-control'  id='fullName' placeholder='e.g. Joe'/>
+                        <input required onChange={props.handleInputChange} name='fullName' value={props.inputs.fullName} type='text' className='form-control'  id='fullName' placeholder='e.g. Joe'/>
                     </div>
                     <div className='form-group'>
                         <label htmlFor='gender'>Gender</label>
-                        <select onChange={props.handleInputChange} value={props.inputs.gender}  name='gender' className='form-control'>
+                        <select required onChange={props.handleInputChange} value={props.inputs.gender}  name='gender' className='form-control'>
+                            <option >Select gender</option>
                             <option value='Male'>Male</option>
                             <option value='Female'>Female</option>
                             <option value='Others'>Rather not say</option>
                         </select>
                     </div>
                     <div className='form-group'>
-                        <label className='form-label' htmlFor='age font-weight-bold'>Age</label>
-                        <input onChange={props.handleInputChange} value={props.inputs.age} name='age' type='text' className='form-control'/>
+                        <label className='form-label' htmlFor='age' >Age</label>
+                        <input required onChange={props.handleInputChange} value={props.inputs.age} name='age' type='text' className='form-control'/>
                     </div>
                     <div className='form-group'>
                         <label className='form-label' htmlFor='phone'>Phone number</label>
-                        <input onChange={props.handleInputChange} value={props.inputs.phone} name='phone' type='tel' className='form-control'/>
+                        <input required onChange={props.handleInputChange} value={props.inputs.phone} name='phone' type='tel' className='form-control'/>
                     </div>
                     <div className='form-group'>
                         <label className='form-label' htmlFor='phone'>Email</label>
-                        <input onChange={props.handleInputChange} value={props.inputs.email} name='email' type='email' className='form-control'/>
+                        <input required onChange={props.handleInputChange} value={props.inputs.email} name='email' type='email' className='form-control'/>
                     </div>
                 </div>
                 </>
@@ -130,26 +131,26 @@ const FormTwo = (props)=> {
                 <div className='Form p-4 my-5' >
                     <div className='form-group'>
                         <label htmlFor='experience'>Level of Experience</label>
-                        <input onChange={props.handleInputChange} value={props.inputs.experience} name='experience' type='text' className='form-control' id='experience' placeholder='your level of experience'/>
+                        <input required onChange={props.handleInputChange} value={props.inputs.experience} name='experience' type='text' className='form-control' id='experience' placeholder='your level of experience'/>
                     </div>
                     <div className='form-group'>
                         <label>Do you own a camera?</label>
-                        <input onChange={props.handleInputChange}  className='form-control' value={props.inputs.camera}  id='' name='camera' type='text' /> 
+                        <input required onChange={props.handleInputChange}  className='form-control' value={props.inputs.camera}  id='' name='camera' type='text' /> 
                         
                         {/* <input id='no' value={props.inputs.camera} name='camera'  value='No' type='radio' />
                         <label htmlFor='no'>No</label> */}
                     </div>
                     <div className='form-group'>
                         <label className='form-label' htmlFor='age font-weight-bold'>If yes, Type of Camera</label>
-                        <input name='cameraType' onChange={props.handleInputChange}  value={props.inputs.cameraType} type='text' placeholder='type in your camera details' className='form-control' />
+                        <input required name='cameraType' onChange={props.handleInputChange}  value={props.inputs.cameraType} type='text' placeholder='type in your camera details' className='form-control' />
                     </div>
                     <div className='form-group'>
                         <label className='form-label' htmlFor='areaOfApplication'>Area of Camera application</label>
-                        <input name='areaOfApplication' onChange={props.handleInputChange} value={props.inputs.areaOfApplication} type='text' className='form-control'/>
+                        <input required name='areaOfApplication' onChange={props.handleInputChange} value={props.inputs.areaOfApplication} type='text' className='form-control'/>
                     </div>
                     <div className='form-group'>
                         <label className='form-label' htmlFor='phone'>Most preferred area of interest</label>
-                        <input name='areaOfInterest' value={props.inputs.areaOfInterest}  onChange={props.handleInputChange} type='text' className='form-control' />
+                        <input required name='areaOfInterest' value={props.inputs.areaOfInterest}  onChange={props.handleInputChange} type='text' className='form-control' />
                     </div>
                 </div>
         </>
